@@ -1,39 +1,20 @@
-# task-manager-frontend
+<p align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+</p>
 
-This template should help get you started developing with Vue 3 in Vite.
+[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
+[circleci-url]: https://circleci.com/gh/nestjs/nest
 
-## Recommended IDE Setup
+## Tecnologías y Herramientas
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- node -> 20.16
+- npm -> 10.8.2
+- pnpm -> 9.4.0
+- vue -> 3.4.29
 
-## Type Support for `.vue` Imports in TS
+## Pasos para descargar el repositorio e instalar las dependencias
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-pnpm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-pnpm dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-pnpm build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-pnpm lint
-```
+1. Descargar el repositorio de github
+2. Posicionate dentro de la carpeta del proyecto usando una terminal
+3. ejecuta el siguiente script `pnpm install` para instalar las dependencias
+4. ejecuta el comando `pnpm dev` para ejecutar el proyecto en modo desarrollo

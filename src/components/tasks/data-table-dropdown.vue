@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { MoreHorizontal } from 'lucide-vue-next'
+import { MoreHorizontal, Pencil, Trash } from 'lucide-vue-next'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -15,10 +15,6 @@ defineProps<{
     id: number
   }
 }>()
-
-function copy(id: number) {
-  navigator.clipboard.writeText(String(id))
-}
 </script>
 
 <template>
@@ -30,11 +26,12 @@ function copy(id: number) {
       </Button>
     </DropdownMenuTrigger>
     <DropdownMenuContent align="end">
-      <DropdownMenuLabel>Actions</DropdownMenuLabel>
-      <DropdownMenuItem @click="copy(task.id)"> Copy payment ID </DropdownMenuItem>
-      <DropdownMenuSeparator />
-      <DropdownMenuItem>View customer</DropdownMenuItem>
-      <DropdownMenuItem>View payment details</DropdownMenuItem>
+      <DropdownMenuItem @click="() => {}">
+        <Pencil class="w-4 h-4 mr-2 text-green-500" /> Editar tarea
+      </DropdownMenuItem>
+      <DropdownMenuItem>
+        <Trash class="w-4 h-4 mr-2 text-red-500" /> Eliminar tarea
+      </DropdownMenuItem>
     </DropdownMenuContent>
   </DropdownMenu>
 </template>
